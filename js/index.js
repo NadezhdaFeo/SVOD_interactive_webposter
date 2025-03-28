@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
     infoButSoundScreen.addEventListener("click", () => { hideInfoBox(soundScreen) });
 
     // анимация фонового цвета для кружков внутри информационного окна "о проекте"
-    let circles = document.getElementsByClassName("circles");
+    let circles = document.querySelectorAll(".circles");
     circles.forEach(div => {
         let colors = ['#ff5537', '#0C9648', '#0078D3', '#C8C8C8', '#ffffff'];
         setInterval(function () { div.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)] }, 600);
