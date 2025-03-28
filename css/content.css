@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "EucidCircularB-Regular";
-    src: url(../fonts/EuclidCircularB-Regular.ttf) format("truetype");
+    font-family: "EucidCircularBRegular";
+    src: url(../fonts/EuclidCircularBRegular.ttf) format("truetype");
     font-style: normal;
     font-weight: 400;
 }
@@ -30,7 +30,7 @@ body {
     --line-height-desktop: 1.3vw;
     --line-height-tablet-vertical: 2.1vw;
     --line-height-mobile: 5vw;
-    --font-family: "EucidCircularB-Regular";
+    --font-family: "EucidCircularBRegular";
     --border-width-desktop_and_tablet: 3vw;
     --red-color: #ff5537;
     --green-color: #0C9648;
