@@ -1,0 +1,16 @@
+<svg width="212" height="162" viewBox="0 0 212 162" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_974_205" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="212" height="162">
+<rect x="0.580078" y="0.276489" width="210.941" height="160.901" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_974_205)">
+<circle cx="83.7324" cy="115.252" r="18.6946" transform="rotate(45 83.7324 115.252)" fill="white" stroke="black" stroke-width="2.7"/>
+<circle cx="83.7319" cy="115.252" r="12.4307" transform="rotate(45 83.7319 115.252)" fill="#FF5537" stroke="black" stroke-width="2.7"/>
+<circle cx="83.7319" cy="115.253" r="6.16673" transform="rotate(45 83.7319 115.253)" fill="black" stroke="black" stroke-width="2.7"/>
+<circle cx="20.0446" cy="20.0446" r="18.6946" transform="matrix(-0.707107 0.707107 0.707107 0.707107 139.927 47.9283)" fill="white" stroke="black" stroke-width="2.7"/>
+<circle cx="13.7807" cy="13.7807" r="12.4307" transform="matrix(-0.707107 0.707107 0.707107 0.707107 139.928 56.7867)" fill="#0C9648" stroke="black" stroke-width="2.7"/>
+<circle cx="7.51673" cy="7.51673" r="6.16673" transform="matrix(-0.707107 0.707107 0.707107 0.707107 139.928 65.6464)" fill="black" stroke="black" stroke-width="2.7"/>
+<circle cx="20.0446" cy="20.0446" r="18.6946" transform="matrix(-0.707107 0.707107 0.707107 0.707107 81.2324 17.8541)" fill="white" stroke="black" stroke-width="2.7"/>
+<circle cx="13.7807" cy="13.7807" r="12.4307" transform="matrix(-0.707107 0.707107 0.707107 0.707107 81.2329 26.7125)" fill="#0078D3" stroke="black" stroke-width="2.7"/>
+<circle cx="7.51673" cy="7.51673" r="6.16673" transform="matrix(-0.707107 0.707107 0.707107 0.707107 81.2329 35.5722)" fill="black" stroke="black" stroke-width="2.7"/>
+</g>
+</svg>

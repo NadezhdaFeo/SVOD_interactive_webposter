@@ -1,0 +1,844 @@
+/* TABLET VERTICAL*/
+@media screen and (min-width: 481px) and (max-width: 1279px) {
+    p {
+        font-size: var(--font-size-tablet-vertical);
+        line-height: var(--line-height-tablet-vertical);
+        text-align: center;
+        margin-right: 2vw;
+        margin-left: 2vw;
+    }
+
+    .upper_line {
+        width: 100%;
+        height: 0.22vw;
+        background-color: black;
+    }
+
+
+    .bottom_bar {
+        height: 23vh;
+        bottom: -3%;
+    }
+
+    .circle {
+        width: 2.8vw;
+        height: 2.8vw;
+        border: 0.3vw solid black;
+    }
+
+    .logo {
+        width: 12vw;
+        height: 12vw;
+        margin-top: 0.3vw;
+    }
+
+    .inner_line {
+        height: 0.22vw;
+    }
+
+    .in_li_main {
+        width: 27vw;
+    }
+
+    .in_li_board {
+        width: 23.1vw;
+    }
+
+    .in_li_equipment {
+        width: 21.7vw;
+    }
+
+    .in_li_quiz {
+        width: 31vw;
+    }
+
+    .in_li_sound {
+        width: 24.9vw;
+    }
+
+    .side_line {
+        width: 7vw;
+        height: 0.22vw;
+    }
+
+    #s_l_main_scr {
+        width: 15vw;
+    }
+
+    .question_but {
+        width: 2.8vw;
+        height: 2.8vw;
+        border-radius: 50%;
+        border: 0.3vw solid black;
+        font-size: var(--font-size-tablet-vertical);
+        line-height: var(--line-height-tablet-vertical);
+        text-align: center;
+        -webkit-text-stroke: 0.02vw black;
+    }
+
+    .go_to_main_but {
+        width: 2.8vw;
+        height: 2.8vw;
+        border: 0.3vw solid black;
+        font-size: var(--font-size-tablet-vertical);
+    }
+
+    .practice img {
+        width: 13.5vw;
+        margin-top: 13.5vh;
+        margin-bottom: 10vh;
+        transition: transform 0.1s ease-out;
+    }
+
+    #add_new_practice {
+        width: 2.8vw;
+        height: 2.8vw;
+        margin: 10vw;
+        border: 0.25vw solid black;
+        font-size: var(--font-size-tablet-vertical);
+        -webkit-text-stroke: 0.08vw black;
+    }
+
+    .carousel_button {
+        width: 3.5vw;
+    }
+
+    .info {
+        width: 44vw;
+        height: 44vw;
+        transform: translate(-50%, -50%);
+    }
+
+    .info_wrap {
+        width: 38vw;
+        height: 38vw;
+        padding: 2vw;
+        padding-top: 2.8vw;
+        overflow-y: scroll;
+        flex-wrap: wrap;
+        scrollbar-width: thin;
+        scrollbar-color: var(--super-dark-grey) transparent;
+    }
+
+    .circles {
+        width: 2.8vw;
+        height: 2.8vw;
+        border: 0.3vw solid black;
+    }
+
+    #circles_animation {
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5vw;
+    }
+
+    .info_wrap::-webkit-scrollbar {
+        width: calc(2px+0.5vw);
+    }
+
+    .info p {
+        font-size: var(--font-size-tablet-vertical);
+        line-height: var(--line-height-tablet-vertical);
+    }
+
+    .info img {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    #svod_collective_logo {
+        width: 24.6vw;
+        height: 24.6vw;
+    }
+
+    .info_wrap img {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .board_bar {
+        width: 100%;
+        height: 8vh;
+    }
+
+    #pinboard {
+        width: 76vw;
+        height: 120vw;
+        background-image: url(../img/pinboard_tablet_vertical_bg.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        top: 7%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    #spectrograms_adding {
+        display: none;
+    }
+
+    #sticker_add_but,
+    #spectrograms_archive,
+    #spectrograms_add_but {
+        font-size: var(--font-size-tablet-vertical);
+        line-height: var(--line-height-tablet-vertical);
+        text-align: center;
+        vertical-align: middle;
+        color: black;
+    }
+
+    #stickers {
+        width: 57vw;
+        height: 57vw;
+        margin: 10vw;
+        margin-top: 5vw;
+    }
+
+    #sticker_add_but {
+        width: 23vw;
+        height: 23vw;
+        padding: 2vw;
+        margin-top: 51vw;
+        margin-left: 27vw;
+    }
+
+    #red_sticker_pin {
+        width: 9vw;
+        height: 9vw;
+        margin-top: 47vw;
+        margin-left: 30vw;
+    }
+
+    #sticker_drawing {
+        width: 62vw;
+        height: 40vw;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+    }
+
+    .color {
+        width: 2.8vw;
+        height: 2.8vw;
+        border: 0.3vw solid black;
+        margin-bottom: 2vw;
+        margin-right: 2vw;
+        margin-left: -4vw;
+    }
+
+    #sticker_canvas {
+        width: 75vw;
+        height: 75vw;
+        border-width: 0.3vw;
+    }
+
+    #go_to_pinboard {
+        width: 20vw;
+        height: 5vw;
+        margin: 4vw;
+
+        font-size: var(--font-size-tablet-vertical);
+        line-height: var(--line-height-tablet-vertical);
+
+        border-radius: 2.5vw;
+        border-width: 0.3vw;
+    }
+
+    #spectrograms_adding {
+        display: none;
+    }
+
+    #pin_adding {
+        width: 80vw;
+        height: 25vw;
+        margin-top: 86vw;
+        margin-left: 5vw;
+    }
+
+    .pin {
+        width: 6.5vw;
+        height: 8vw;
+    }
+
+    #equipment_practices {
+        display: none;
+    }
+
+    #info_equipment_screen {
+        display: flex;
+    }
+
+    .quiz_bar {
+        width: 100%;
+        height: 12vh;
+        position: absolute;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 2;
+    }
+
+    .quiz_container {
+        width: 50vw;
+        height: 88vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #quiz_question {
+        width: 80vw;
+        font-family: var(--font-family);
+        font-size: var(--font-size-tablet-vertical);
+        line-height: var(--line-height-tablet-vertical);
+        text-align: center;
+        text-wrap: balance;
+        color: black;
+        margin: 6vw;
+    }
+
+    #quiz_img {
+        width: 55vw;
+        height: 40vw;
+        margin-top: 4vw;
+    }
+
+    #question_number {
+        font-size: var(--font-size-tablet-vertical);
+        line-height: var(--line-height-tablet-vertical);
+    }
+
+    #quiz_options {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        margin-bottom: 1.5vw;
+    }
+
+    .quiz_option {
+        width: 32vw;
+        height: 5vw;
+        margin: 0.4vw;
+        display: flex;
+
+        font-size: var(--font-size-tablet-vertical);
+        line-height: var(--line-height-tablet-vertical);
+
+        padding: 1vw 1vw 1vw 4vw;
+        border-radius: 3vw;
+        border-width: 0.3vw;
+    }
+
+    .custom_radio {
+        width: 2.5vw;
+        height: 2.5vw;
+        border-width: 0.3vw;
+        margin-left: -3vw;
+    }
+
+    #quiz_next_button {
+        width: 27vw;
+        height: 5vw;
+        margin-top: 2vw;
+        font-size: var(--font-size-tablet-vertical);
+        line-height: var(--line-height-tablet-vertical);
+        text-align: center;
+        color: var(--dark-grey);
+
+        border-radius: 3vw;
+        border-width: 0.3vw;
+        border-style: solid;
+        border-color: var(--dark-grey);
+
+        cursor: pointer;
+    }
+
+    #quiz_next_button:disabled:hover {
+        border-radius: 3vw;
+        border-width: 0.3vw;
+    }
+
+    #quiz_score_animation {
+        height: 55vh;
+    }
+
+    .quiz_score {
+        width: 2.8vw;
+        height: 2.8vw;
+        font-size: var(--font-size-tablet-vertical);
+        line-height: var(--line-height-tablet-vertical);
+        border-width: 0.3vw;
+    }
+
+    #exact_score {
+        width: 12vw;
+        height: 12vw;
+    }
+
+    #sound_cognition_text {
+        font-size: var(--font-size-tablet-vertical);
+        line-height: var(--line-height-tablet-vertical);
+    }
+
+    #headphones {
+        width: 15vw;
+        height: 15vw;
+        margin: 2.5vw;
+    }
+
+    #on_off_switch_but {
+        width: 14vw;
+        height: 4vw;
+        font-size: var(--font-size-tablet-vertical);
+        line-height: var(--line-height-desktop);
+        border-radius: 2vw;
+        border-width: 0.22vw;
+    }
+
+    .sound_switch_but {
+        width: 15vw;
+        height: 5vw;
+        border-radius: 3vw;
+        border-width: 0.22vw;
+        cursor: pointer;
+    }
+
+    .switch_but_img {
+        width: 12vw;
+        margin-top: -6vw;
+    }
+
+    .sound_cognition_text {
+        font-size: var(--font-size-tablet-vertical);
+        line-height: var(--line-height-tablet-vertical);
+    }
+}
+
+/* MOBILE VERTICAL */
+@media screen and (min-width: 0px) and (max-width: 480px) {
+    p {
+        font-size: var(--font-size-mobile-vertical);
+        line-height: var(--line-height-mobile-vertical);
+        text-align: center;
+        margin-right: -10vw;
+        margin-left: -10vw;
+    }
+
+    .upper_line {
+        height: 0.5vw;
+    }
+
+    .inner_line {
+        height: 0.5vw;
+    }
+
+    .in_li_main {
+        width: 38vw;
+    }
+
+    .in_li_board {
+        width: 13vw;
+    }
+
+    .in_li_equipment {
+        width: 14.2vw;
+    }
+
+    .in_li_quiz {
+        width: 17vw;
+    }
+
+    .in_li_sound {
+        width: 17vw;
+    }
+
+    .side_line {
+        width: 7vw;
+        height: 0.5vw;
+    }
+
+    #s_l_main_scr {
+        display: none;
+    }
+
+    .circle {
+        display: none;
+    }
+
+    .bottom_bar {
+        height: 23vh;
+        bottom: -3%;
+    }
+
+    .logo {
+        width: 26vw;
+        height: 26vw;
+        margin-top: 1vw;
+    }
+
+    .go_to_main_but {
+        width: 7.5vw;
+        height: 7.5vw;
+        border: 0.6vw solid black;
+        font-size: var(--font-size-mobile-vertical);
+    }
+
+    .question_but {
+        width: 7.5vw;
+        height: 7.5vw;
+        border-radius: 50%;
+        border: 0.65vw solid black;
+        font-size: var(--font-size-mobile-vertical);
+        -webkit-text-stroke: 0.1vw black;
+    }
+
+    .carousel {
+        grid-auto-columns: calc(100%);
+    }
+
+    .practice img {
+        width: 40vw;
+        margin-top: 12vh;
+        margin-bottom: 14vh;
+    }
+
+    #add_new_practice {
+        width: 7.5vw;
+        height: 7.5vw;
+        margin: 32vw;
+        border: 0.65vw solid black;
+        font-size: var(--font-size-mobile-vertical);
+        -webkit-text-stroke: 0.3vw black;
+    }
+
+    .carousel_button {
+        width: 7vw;
+    }
+
+    .info {
+        width: 92vw;
+        height: 92vw;
+        transform: translate(-50%, -50%);
+    }
+
+    .info_wrap {
+        width: 80vw;
+        height: 80vw;
+        padding: 4vw;
+        overflow-y: scroll;
+        flex-wrap: wrap;
+        scrollbar-width: thin;
+        scrollbar-color: var(--super-dark-grey) transparent;
+    }
+
+    .circles {
+        width: 7.5vw;
+        height: 7.5vw;
+        border: 0.65vw solid black;
+    }
+
+    #circles_animation {
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10vw;
+    }
+
+    .info_wrap::-webkit-scrollbar {
+        width: calc(2px+0.5vw);
+    }
+
+    .info p {
+        font-size: var(--font-size-mobile-vertical);
+        line-height: var(--line-height-mobile-vertical);
+    }
+
+    .info img {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    #svod_collective_logo {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .info_wrap img {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    #pinboard {
+        width: 90vw;
+        height: 150vw;
+        background-image: url(../img/pinboard_mobile_bg.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    #sticker_add_but,
+    #spectrograms_archive,
+    #spectrograms_add_but {
+        font-size: var(--font-size-mobile-vertical);
+        line-height: var(--line-height-mobile-vertical);
+        text-align: center;
+        vertical-align: middle;
+        color: black;
+    }
+
+    #stickers {
+        width: 74vw;
+        height: 74vw;
+        margin: 5vw;
+        margin-left: 8vw;
+    }
+
+    #sticker_add_but {
+        width: 28vw;
+        height: 28vw;
+        margin-top: 62vw;
+        margin-left: 29vw;
+    }
+
+    #red_sticker_pin {
+        width: 11vw;
+        height: 11vw;
+        margin-top: 56vw;
+        margin-left: 33vw;
+    }
+
+    #sticker_drawing {
+        width: 62vw;
+        height: 40vw;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+    }
+
+    .color {
+        width: 7.5vw;
+        height: 7.5vw;
+        border: 0.65vw solid black;
+        margin-bottom: 2vw;
+        margin-right: 2vw;
+        margin-left: -4vw;
+    }
+
+    #sticker_canvas {
+        width: 75vw;
+        height: 75vw;
+        border-width: 0.65vw;
+    }
+
+    #go_to_pinboard {
+        width: 30vw;
+        height: 10vw;
+        margin: 10vw;
+
+        font-size: var(--font-size-mobile-vertical);
+        line-height: var(--line-height-mobile-vertical);
+
+        border-radius: 5vw;
+        border-width: 0.65vw;
+    }
+
+    #spectrograms_adding {
+        display: none;
+    }
+
+    #pin_adding {
+        width: 80vw;
+        height: 40vw;
+        margin-top: 99vw;
+        margin-left: 5vw;
+    }
+
+    .pin {
+        width: 8vw;
+        height: 10vw;
+    }
+
+    #equipment_practices {
+        display: none;
+    }
+
+    #info_equipment_screen {
+        display: flex;
+    }
+
+    #laptop {
+        width: 60vw;
+        margin: -2.5vw;
+    }
+
+    .quiz_bar {
+        width: 100%;
+        height: 12vh;
+        position: absolute;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 2;
+    }
+
+    .quiz_container {
+        width: 50vw;
+        height: 88vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #quiz_question {
+        font-family: var(--font-family);
+        font-size: var(--font-size-mobile-vertical);
+        line-height: var(--line-height-mobile-vertical);
+        text-align: center;
+        text-wrap: balance;
+        color: black;
+        margin: 12vw;
+    }
+
+    #quiz_img {
+        width: 73vw;
+        height: 70vw;
+        margin-top: 5vw;
+    }
+
+    #question_number {
+        font-size: var(--font-size-mobile-vertical);
+        line-height: var(--line-height-mobile-vertical);
+        margin: 3vw;
+    }
+
+    #quiz_options {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        margin: -10vw;
+        margin-bottom: 0vw;
+    }
+
+    .quiz_option {
+        width: 85vw;
+        height: 12vw;
+        margin: 1vw;
+
+        font-size: var(--font-size-mobile-vertical);
+        line-height: var(--line-height-mobile-vertical);
+
+        padding: 3vw 1vw 1vw 12vw;
+        border-radius: 6vw;
+        border-width: 0.5vw;
+        border-style: solid;
+    }
+
+    .custom_radio {
+        width: 6vw;
+        height: 6vw;
+        border-width: 0.6vw;
+        border-radius: 50%;
+        border-style: solid;
+        border-color: var(--super-dark-grey);
+        margin-left: -8vw;
+    }
+
+    #quiz_next_button {
+        width: 70vw;
+        height: 10vw;
+        margin-top: 10vw;
+        font-size: var(--font-size-mobile-vertical);
+        line-height: var(--line-height-mobile-vertical);
+        text-align: center;
+        color: var(--dark-grey);
+        border-radius: 5vw;
+        border-width: 0.5vw;
+    }
+
+    #quiz_next_button:disabled:hover {
+        border-radius: 5vw;
+        border-width: 0.5vw;
+    }
+
+    #quiz_score_animation {
+        height: 58vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .quiz_score {
+        width: 7.5vw;
+        height: 7.5vw;
+        font-size: var(--font-size-mobile-vertical);
+        line-height: var(--line-height-mobile-vertical);
+        border-width: 0.6vw;
+    }
+
+    #exact_score {
+        width: 24vw;
+        height: 24vw;
+    }
+
+    #sound_cognition_text {
+        font-size: var(--font-size-mobile-vertical);
+        line-height: var(--line-height-mobile-vertical);
+    }
+
+    #headphones {
+        width: 30vw;
+        height: 30vw;
+        margin: 2vw;
+    }
+
+    #on_off_switch_but {
+        width: 28vw;
+        height: 7vw;
+        font-size: var(--font-size-mobile-vertical);
+        line-height: var(--line-height-mobile-vertical);
+        border-radius: 4vw;
+        border-width: 0.5vw;
+        margin-top: 18vw;
+    }
+
+    .sound_switch_but {
+        width: 24vw;
+        height: 10vw;
+        border-radius: 10vw;
+        border-width: 0.5vw;
+        margin-bottom: 12vw;
+    }
+
+    .switch_but_img {
+        width: 22vw;
+        margin: -2vw;
+        margin-top: -10vw;
+    }
+
+    #on_off_switch_but {
+        margin: -14vw;
+        margin-top: 2vw;
+    }
+
+    .sound_cognition_text {
+        font-size: var(--font-size-mobile-vertical);
+        line-height: var(--line-height-tablet-vertical);
+    }
+}

@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>svod_practices_archive</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="./img/favicon.svg" rel="shortcut icon" type="image/x-icon">
+    <!-- <script src="./js/index.js" charset="UTF-8" defer></script> -->
+    <script src="./js/p5.js"></script>
+    <script src="./js/connecting_dots_canvas.js"></script>
+</head>
+
+<body>
+    <section id="main_screen">
+        <div class="question_bar">
+            <div class="upper_line"></div>
+            <div class="question_but" id="q_b_main">&#x2716</div>
+            <!-- кнопка, скрывающая и раскрывающая окно с описанием проекта "spash screen" -->
+        </div>
+        <div class="carousel_of_practices"> <!-- карусель отцифрованных практик, возникающих в среде СВОДа -->
+            <button class="carousel_button" id="left">
+                <svg class="carousel_button_icon" width="25" height="40" viewBox="0 0 25 40" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.4493 2.3396L3.44928 20.3417L23.4493 38.3396" stroke="black" />
+                </svg>
+            </button>
+            <ul class="carousel">
+                <li class="practice" id="board">
+                    <img src="./img/carousel_img_1.svg" alt="Доска">
+                    <p class="crsl_text">Доска MINI- <br> коммуникаций</p>
+                </li>
+                <li class="practice" id="equipment">
+                    <img src="./img/carousel_img_2.svg" alt="Аппаратура">
+                    <p class="crsl_text">Настройка <br> аппаратуры</p>
+                </li>
+                <li id="quiz" class="practice">
+                    <img src="./img/carousel_img_3.svg" alt="Квиз" id="quiz_imgg">
+                    <p class="crsl_text">Проведение <br> квизов</p>
+                </li>
+                <li class="practice" id="sound">
+                    <img src="./img/carousel_img_4.svg" alt="Звук">
+                    <p class="crsl_text"> Практика <br> вслушивания</p>
+                </li>
+                <li class="practice" id="adding">
+                    <div id="add_new_practice">+</div>
+                    <p class="crsl_text"> Новые практики <br> ожидают отцифровки</p>
+                </li>
+                <li class="practice" id="board">
+                    <img src="./img/carousel_img_1.svg" alt="Доска">
+                    <p class="crsl_text">Доска MINI- <br> коммуникаций</p>
+                </li>
+                <li class="practice" id="equipment">
+                    <img src="./img/carousel_img_2.svg" alt="Аппаратура">
+                    <p class="crsl_text">Настройка <br> аппаратуры</p>
+                </li>
+                <li id="quiz" class="practice">
+                    <img src="./img/carousel_img_3.svg" alt="Квиз">
+                    <p class="crsl_text">Проведение <br> квизов</p>
+                </li>
+                <li class="practice" id="sound">
+                    <img src="./img/carousel_img_4.svg" alt="Звук">
+                    <p class="crsl_text"> Практика <br> вслушивания</p>
+                </li>
+                <li class="practice" id="adding">
+                    <div id="add_new_practice">+</div>
+                    <p class="crsl_text"> Новые практики <br> ожидают отцифровки</p>
+                </li>
+            </ul>
+            <button class="carousel_button" id="right">
+                <svg class="carousel_button_icon" width="25" height="40" viewBox="0 0 25 40" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.02136 2.3396L22.0214 20.3417L2.02137 38.3396" stroke="black" />
+                </svg>
+            </button>
+        </div>
+        <div class="bottom_bar"> <!-- нижняя навигационная полоса с логотипом -->
+            <div class="side_line" id="s_l_main_scr"></div>
+            <div class="circle"></div>
+            <div class="inner_line in_li_main"></div>
+            <div class="logo"></div>
+            <div class="inner_line in_li_main"></div>
+            <div class="circle"></div>
+            <div class="side_line" id="s_l_main_scr"></div>
+        </div>
+        <div class="info_bg">
+            <div class="info" id="info_main_scr">
+                <div class="info_wrap">
+                    <p>Вас приветствует <br>
+                        <img id="svod_collective_logo" src="./img/svod_collective_logo.svg" alt="СВОД КОЛЛЕКТИВ"> <br>
+                        Команда специалистов, <br>
+                        работающих в центре <br>
+                        познания звука <br><br>
+                        Каждый день в СВОДе наполнен нестандартными задачами и привычными занятиями; зарождающимися
+                        практиками и устоявшимися традициями. <br><br>
+                        Этот сайт – своеобразная форма цифровой фиксации практик, возникающих в рабочей среде СВОДа
+                    </p>
+                    <div id="circles_animation">
+                        <div class="circles"></div>
+                        <div class="circles"></div>
+                        <div class="circles"></div>
+                        <div class="circles"></div>
+                        <div class="circles"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="board_screen">
+        <div class="board_bar"> <!-- верхняя навигационная полоса с кнопками -->
+            <div class="side_line"></div>
+            <button class="question_but" id="q_b_board"></button>
+            <div class="inner_line in_li_board"></div>
+            <p>Доска MINI-коммуникаций</p>
+            <div class="inner_line in_li_board"></div>
+            <button class="go_to_main_but">&#x2716</button>
+            <div class="side_line"></div>
+        </div>
+        <div id="pinboard">
+            <div id="stiker_adding">
+                <div id="stickers"></div>
+                <button id="sticker_add_but">Добавить стикер</button>
+                <div id="red_sticker_pin"></div>
+            </div>
+            <div id="spectrograms_adding">
+                <div id="spectrograms_archive">Архив спектрограмм</div>
+                <button id="spectrograms_add_but">Пополнить</button>
+                <div class="spectrogram" id="spg_1"></div>
+                <div class="spectrogram" id="spg_2"></div>
+            </div>
+            <div id="pin_adding"></div>
+        </div>
+        <div id="sticker_drawing">
+            <div id="color_input">
+                <div class="color" id="white_color" style="background: white;"></div>
+                <div class="color" id="grey_color" style="background: #C8C8C8;"></div>
+                <div class="color" id="red_color" style="background: #ff5537;"></div>
+                <div class="color" id="blue_color" style="background: #0078D3;"></div>
+                <div class="color" id="green_color" style="background:#0C9648;"></div>
+                <div class="color" id="black_color" style="background: #000000;"></div>
+            </div>
+            <div id="drawing_and_pinning">
+                <canvas id="sticker_canvas"></canvas>
+                <button id="go_to_pinboard">Крепим!</button>
+            </div>
+        </div>
+        <div class="info_bg">
+            <div class="info" id="info_board_screen">
+                <div class="info_wrap">
+                    <p>В мире звуковой настройки важное место занимает <br> MIDI-контроллер – прибор, который
+                        настраивает взаимодействие между цифровым музыкальным оборудованием.<br>
+                        <img src="./img/MIDI-controller.svg" alt=""> <br>
+                        Во взаимодействии нашего коллектива такую же задачу помимо прочего решает доска <span
+                            style="color:#0C9648">
+                            MINI-коммуникаций</span> –
+                        поле для небольших внутренних интерактивов. <br>
+                        <img src="./img/carousel_img_1.svg" alt="">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="equipment_screen">
+        <div class="equipment_bar"> <!-- верхняя навигационная полоса с кнопками -->
+            <div class="side_line"></div>
+            <button class="question_but" id="q_b_equipment">?</button>
+            <div class="inner_line in_li_equipment"></div>
+            <p>Подключение аппаратуры</p>
+            <div class="inner_line in_li_equipment"></div>
+            <button class="go_to_main_but">&#x2716</button>
+            <div class="side_line"></div>
+        </div>
+        <div id="equipment_practices">
+            <img id="equipment_practices_bg" src="./img/equipment_screen_background.svg" alt="">
+            <table class="pixel_table"> <!-- поле для рисования по клеточкам -->
+                <tr>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                </tr>
+                <tr>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                </tr>
+                <tr>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                </tr>
+                <tr>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                </tr>
+                <tr>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                </tr>
+                <tr>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                </tr>
+                <tr>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                </tr>
+                <tr>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                </tr>
+                <tr>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                </tr>
+                <tr>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                </tr>
+                <tr>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                </tr>
+                <tr>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                </tr>
+                <tr>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                </tr>
+                <tr>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                </tr>
+                <tr>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                </tr>
+                <tr>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                </tr>
+                <tr>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                    <td class="pixels"></td>
+                </tr>
+            </table>
+            <div id="rotate_table"> <!-- поле с крутящимися элементами -->
+                <table id="rotate_elements">
+                    <tr>
+                        <td class="rotate_element rot_el_1"> <img src="./img/rotate_1.svg" alt=""></td>
+                        <td class="rotate_element rot_el_2"> <img src="./img/rotate_2.svg" alt=""></td>
+                        <td class="rotate_element rot_el_3"> <img src="./img/rotate_3.svg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td class="rotate_element rot_el_4"> <img src="./img/rotate_4.svg" alt=""></td>
+                        <td class="rotate_element rot_el_5"> <img src="./img/rotate_5.svg" alt=""></td>
+                        <td class="rotate_element rot_el_6"> <img src="./img/rotate_6.svg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td class="rotate_element rot_el_7"> <img src="./img/rotate_7.svg" alt=""></td>
+                        <td class="rotate_element rot_el_8"> <img src="./img/rotate_8.svg" alt=""></td>
+                        <td class="rotate_element rot_el_9"> <img src="./img/rotate_9.svg" alt=""></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="connecting_dots_canvas"></div> <!-- поле для соединения точек -->
+        </div>
+        <div class="info_bg" id="info_bg_equipment_screen">
+            <div class="info" id="info_equipment_screen">
+                <div class="info_wrap">
+                    <p> Эта практика доступна только при открытии архива <br> c компьютера или ноутбука. <br>
+                        <img id="laptop" src="./img/laptop.svg" alt="img"> <br>
+                        Откройте сайт с этих устройств и испытайте себя <br> в подключении звукового оборудования
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="quiz_screen">
+        <div class="quiz_bar"> <!-- верхняя навигационная полоса с кнопками -->
+            <div class="side_line"></div>
+            <button class="question_but" id="q_b_quiz">?</button>
+            <div class="inner_line in_li_quiz"></div>
+            <p id="question_number"></p> <!-- здесь будет отражаться номер вопроса -->
+            <div class="inner_line in_li_quiz"></div>
+            <button class="go_to_main_but">&#x2716</button>
+            <div class="side_line"></div>
+        </div>
+        <div class="quiz_container">
+            <div id="quiz_question"></div> <!-- поле для генерации вопроса -->
+            <div id="quiz_options"> <!-- поле для генерации ответов -->
+            </div>
+            <button id="quiz_next_button">Следующий вопрос</button>
+        </div>
+    </section>
+    <section id="sound_cognition_screen"> <!-- экран с практикой вслушивания в звуки разных объектов -->
+        <div class="sound_bar"> <!-- верхняя навигационная полоса с кнопками -->
+            <div class="side_line"></div>
+            <button class="question_but" id="q_b_sound">?</button>
+            <div class="inner_line in_li_sound"></div>
+            <p>Практика вслушивания</p>
+            <div class="inner_line in_li_sound"></div>
+            <button class="go_to_main_but">&#x2716</button>
+            <div class="side_line"></div>
+        </div>
+        <div class="sound_cognition_canvas" id="book">
+            <div class="sound_cognition_text" id="book_text"></div>
+        </div>
+        <div class="sound_cognition_canvas" id="pepper">
+            <div class="sound_cognition_text" id="pepper_text"></div>
+        </div>
+        <div class="sound_cognition_canvas" id="pupyrka">
+            <div class="sound_cognition_text" id="pupyrka_text"></div>
+        </div>
+        <div class="sound_cognition_canvas" id="sponge">
+            <div class="sound_cognition_text" id="sponge_text"></div>
+        </div> <!-- поля для рисования объектами -->
+        <div class="sound_cognition_text" id="initial_text">Выбери объект</div> <!-- поле, где возникает текст -->
+        <div id="sound_cognition_buttons"> <!-- кнопки выбора объекта для звукового исследования -->
+            <button class="sound_switch_but" id="book_sound" value="../sounds/book_sound.mp3"><img
+                    class="switch_but_img" id="book_but" src="./img/book.png" alt=""></button>
+            <button class="sound_switch_but" id="pepper_sound" value="../sounds/pepper_sound.mp3"><img
+                    class="switch_but_img" id="pepper_but" src="./img/pepper.png" alt=""></button>
+            <button id="on_off_switch_but">звук выкл</button>
+            <button class="sound_switch_but" id="pupyrka_sound" value="../sounds/pupyrka_sound.mp3"><img
+                    class="switch_but_img" id="pupyrka_but" src="./img/pupyrka.png" alt=""></button>
+            <button class="sound_switch_but" id="sponge_sound" value="../sounds/sponge_sound.mp3"><img
+                    class="switch_but_img" id="sponge_but" src="./img/sponge.png" alt=""></button>
+        </div>
+        <div class="info_bg">
+            <div class="info" id="info_sound_screen">
+                <div class="info_wrap">
+                    <p> Практика вслушивания – это погружение в звук привычных предметов, в поисках новых звуковых
+                        эффектов
+                        <br>
+                        <img id="headphones" src="./img/headphones.svg" alt="наушники"> <br>
+                        Для полного погружения, советуем надеть наушники
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/index.js" charset="UTF-8" defer></script>
+</body>
+
+</html>
