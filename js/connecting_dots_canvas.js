@@ -52,10 +52,10 @@ class Dot {
 }
 
 // подключение шрифта
-let font;
-function preload() {
-    font = loadFont("/fonts/EuclidCircularBRegular.ttf");
-}
+// let font;
+// function preload() {
+//     font = loadFont("/fonts/EuclidCircularBRegular.ttf");
+// }
 
 // создание поля для рисования
 function setup() {
@@ -69,7 +69,8 @@ function setup() {
 
 function draw() {
     background(200);
-    textFont(font);
+    // textFont(font);
+    textFont('Arial')
 
     for (let i = 0; i < guideDots.length; i++) {
         guideDots[i].plot(200);
