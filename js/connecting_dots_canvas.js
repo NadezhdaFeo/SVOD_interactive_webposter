@@ -54,7 +54,7 @@ class Dot {
 // подключение шрифта
 let font;
 function preload() {
-    font = loadFont("/fonts/EuclidCircularB-Regular.ttf");
+    font = loadFont("/fonts/EuclidCircularBRegular.ttf");
 }
 
 // создание поля для рисования
