@@ -524,7 +524,7 @@ document.addEventListener("DOMContentLoaded", function () {
         pepperCanvas.style.zIndex = 2;
         pupyrkaCanvas.style.zIndex = 2;
         spongeCanvas.style.zIndex = 2;
-        bookCanvas.style.cursor = "url(../img/book.svg), auto";
+        bookCanvas.style.cursor = "url(./img/book.svg), auto";
         cleanTextFields();
         textprint(-1, "пхл-пхщ-пхлы-пх-щ-щ-щ", bookTextField)
         bookCanvas.addEventListener('mousemove', () => {
@@ -536,7 +536,7 @@ document.addEventListener("DOMContentLoaded", function () {
         pepperCanvas.style.zIndex = 3;
         pupyrkaCanvas.style.zIndex = 2;
         spongeCanvas.style.zIndex = 2;
-        pepperCanvas.style.cursor = "url(../img/pepper.svg), auto";
+        pepperCanvas.style.cursor = "url(./img/pepper.svg), auto";
         cleanTextFields();
         pepperRun = true;
         textprint(-1, "хрумхрыщ-хрыщ-хрыщ", pepperTextField);
@@ -547,7 +547,7 @@ document.addEventListener("DOMContentLoaded", function () {
         pepperCanvas.style.zIndex = 2;
         pupyrkaCanvas.style.zIndex = 3;
         spongeCanvas.style.zIndex = 2;
-        pupyrkaCanvas.style.cursor = "url(../img/pupyrka.svg), auto";
+        pupyrkaCanvas.style.cursor = "url(./img/pupyrka.svg), auto";
         cleanTextFields();
         textprint(-1, "пончк-пончк-пончк", pupyrkaTextField);
         pupyrkaCanvas.addEventListener('mousemove', () => { drawing(pupyrkaCanvas) })
@@ -557,7 +557,7 @@ document.addEventListener("DOMContentLoaded", function () {
         pepperCanvas.style.zIndex = 2;
         pupyrkaCanvas.style.zIndex = 2;
         spongeCanvas.style.zIndex = 3;
-        spongeCanvas.style.cursor = "url(../img/sponge.svg), auto";
+        spongeCanvas.style.cursor = "url(./img/sponge.svg), auto";
         cleanTextFields();
         textprint(-1, "шипщщапш-пщп", spongeTextField);
         spongeCanvas.addEventListener('mousemove', () => { drawing(spongeCanvas) })
