@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("pin_adding");
     form.style.cursor = 'url(./img/pin_cursor.svg), auto';
     let pinImgUrl = "./img/blue_pin.svg";
-    let pinImgOptions = ["../img/blue_pin.svg", "../img/red_pin.svg", "../img/green_pin.svg"];
+    let pinImgOptions = ["./img/blue_pin.svg", "./img/red_pin.svg", "./img/green_pin.svg"];
     form.addEventListener("click", function (e) {
         pin = document.createElement("div");
         pin.className = "pin";
@@ -197,7 +197,7 @@ document.addEventListener("DOMContentLoaded", function () {
         form.appendChild(pin);
         randomPin = pinImgOptions[Math.floor(Math.random() * pinImgOptions.length)];
         pinImgUrl = randomPin
-        form.style.cursor = "url(" + randomPin + "), auto";
+        form.style.cursor = "url(" + pinImgUrl + "), auto";
     });
 
     // открытие окна для рисования на стикере
