@@ -180,9 +180,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // добавление пина в форму для оценки настроения от 1 до 5
     const form = document.getElementById("pin_adding");
-    form.style.cursor = 'url(./img/pin_cursor.svg), auto';
-    let pinImgUrl = "./img/blue_pin.svg";
-    let pinImgOptions = ["./img/blue_pin.svg", "./img/red_pin.svg", "./img/green_pin.svg"];
+    form.style.cursor = 'url(/img/pin_cursor.svg), auto';
+    let pinImgUrl = "/img/blue_pin.svg";
+    let pinImgOptions = ["/img/blue_pin.svg", "/img/red_pin.svg", "/img/green_pin.svg"];
     form.addEventListener("click", function (e) {
         pin = document.createElement("div");
         pin.className = "pin";
