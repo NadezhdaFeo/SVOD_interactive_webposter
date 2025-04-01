@@ -260,11 +260,12 @@ document.addEventListener("DOMContentLoaded", function () {
         e.preventDefault();
     }
     // смена цвета рисования
+    stickerCanvas.style.cursor = "url(./img/black_color_cursor.svg), auto";
     const colorChangeButs = document.querySelectorAll(".color")
     colorChangeButs.forEach(div => {
         div.addEventListener("click", (e) => {
             drawColor = div.style.background;
-            stickerCanvas.style.cursor = "url(../img/" + div.id + "_cursor.svg), auto";
+            stickerCanvas.style.cursor = "url(./img/" + div.id + "_cursor.svg), auto";
         });
     })
     // крепление стикера на доску

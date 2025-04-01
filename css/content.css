@@ -65,7 +65,6 @@ body {
     border: 0.2vw solid black;
     font-family: var(--font-family);
     font-size: var(--font-size-desktop);
-    -webkit-text-stroke: 0.02vw black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,7 +72,6 @@ body {
 
 .question_but:hover {
     cursor: pointer;
-
 }
 
 #q_b_main {
@@ -362,7 +360,9 @@ p {
     width: 8.5vw;
     height: 8.4vw;
     margin-top: 0.3vw;
-    background: url(../img/logo.svg) no-repeat;
+    background: url(../img/svod_logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #board_screen {

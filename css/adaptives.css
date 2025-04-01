@@ -73,7 +73,6 @@
         font-size: var(--font-size-tablet-vertical);
         line-height: var(--line-height-tablet-vertical);
         text-align: center;
-        -webkit-text-stroke: 0.02vw black;
     }
 
     .go_to_main_but {
@@ -436,6 +435,10 @@
         margin-left: -10vw;
     }
 
+    .question_bar {
+        top: 2.5%;
+    }
+
     .upper_line {
         height: 0.5vw;
     }
@@ -479,7 +482,6 @@
 
     .bottom_bar {
         height: 23vh;
-        bottom: -3%;
     }
 
     .logo {
@@ -501,7 +503,6 @@
         border-radius: 50%;
         border: 0.65vw solid black;
         font-size: var(--font-size-mobile-vertical);
-        -webkit-text-stroke: 0.1vw black;
     }
 
     .carousel {
